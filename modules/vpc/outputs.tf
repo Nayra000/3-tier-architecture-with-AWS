@@ -15,8 +15,6 @@ output "private_subnets_last_two" {
   value = slice(aws_subnet.private_subnets[*].id, 2,4)
 }
 
-
-
 output "internet_gateway_id" {
   value = aws_internet_gateway.IGW.id
 }
@@ -49,3 +47,6 @@ output "app_sg" {
   value = aws_security_group.app_sg.id
 }
 
+output "rds_sg" {
+  value = aws_security_group.rds_sg.id
+}
