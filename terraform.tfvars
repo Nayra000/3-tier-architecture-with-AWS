@@ -13,7 +13,7 @@ azs = ["us-east-1a", "us-east-1b"]
 
 tags   = { Environment = "dev"}
 
-ami_id = "ami-084568db4383264d4"
+ami_id = "ami-0f9de6e2d2f067fca"
 
 instance_type = "t3.micro"
 
@@ -23,10 +23,7 @@ key_name = "nayra-key"
 ###### Web
 web_name_prefix = "web"
 
-
-
 web_isInternal = false
-
 
 backend_isInternal = true
 

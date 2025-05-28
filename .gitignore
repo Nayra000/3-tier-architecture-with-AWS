@@ -26,3 +26,6 @@ secrets.tfvars
 # Ignore IDE or Editor Specific Files
 .vscode/
 .idea/
+
+
+.terraform.lock.hcl

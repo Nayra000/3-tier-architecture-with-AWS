@@ -40,4 +40,8 @@ module "backend" {
   lb_SG = [module.vpc.app_alb_sg]
 }
 
-
+module "database" {
+  source = "./modules/database"
+  subnets = module.vpc.private_subnets_last_two
+  rds_sg = [module.vpc.rds_sg]
+}

@@ -1,6 +1,6 @@
 resource "aws_launch_template" "template" {
   
-  name_prefix = format("%s-lt", var.name_prefix)
+  name_prefix = format("%s-lt-", var.name_prefix)
   image_id      = var.ami_id
   instance_type = var.instance_type
   key_name      = var.key_name
